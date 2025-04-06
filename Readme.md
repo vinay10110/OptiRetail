@@ -1,6 +1,6 @@
-# Retail Inventory Management System using LangGraph Swarm
+# Retail Inventory Management System using LangGraph 
 
-This project is a multi-agent AI system for retail inventory management, built using LangGraph Swarm architecture. The system helps predict demand, ensure product availability, reduce inventory holding costs, and improve supply chain efficiency.
+This project is a multi-agent AI system for retail inventory management, built using LangGraph multi-agent architecture. The system helps predict demand, ensure product availability, reduce inventory holding costs, and improve supply chain efficiency.
 
 ## Architecture Overview
 
@@ -25,7 +25,7 @@ These agents communicate through dedicated channels and coordinate to provide a 
 
 The system is built using:
 
-- **LangGraph Swarm**: For multi-agent orchestration and communication
+- **LangGraph**: For multi-agent orchestration and communication
 - **LangChain**: For document processing, embeddings, and retrieval
 - **FAISS**: For efficient vector storage and similarity search
 - **Ollama**: For local LLM inference
@@ -72,7 +72,9 @@ streamlit run app.py
 ```
 retail-inventory-system/
 ├── app.py                           # Streamlit interface
-├── langgraph_swarm_retail.py        # Main LangGraph Swarm implementation
+├── demand_forecasting_agent.py
+├── inventory_monitoring_agent.py  
+├── price_optimization_agent.py          # Main LangGraph Swarm implementation
 ├── datasets/                        # CSV data files
 │   ├── demand_forecasting.csv
 │   ├── inventory_monitoring.csv
